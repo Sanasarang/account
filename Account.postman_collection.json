@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "d15dd4d1-5a1e-4b14-80e6-cabcb12fdcd0",
+		"name": "Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account Validate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"accountNumber\": \"123456\",\n  \"sources\": [   \n    \"source1\",   \n    \"source2\" \n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9100/v1/api/account/validate",
+					"host": [
+						"localhost"
+					],
+					"port": "9100",
+					"path": [
+						"v1",
+						"api",
+						"account",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Datasource1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"accountNumber\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/source1/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"source1",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
