@@ -4,4 +4,4 @@
 2) Start Datasource1 Service/Application (account-datasource1)
 3) Start Account Service/Application (account-service)
 
-Test APIs using the attached postman collection
+Test APIs using the attached postman collection (Account.postman_collection.json)
